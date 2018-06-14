@@ -1,0 +1,11 @@
+
+.DS_Store
+scss/*
+img/*
+vendor/*
+README.md
+*.json
+js/creative.js
+css/creative.css
+LICENSE
+gulpfile.js
