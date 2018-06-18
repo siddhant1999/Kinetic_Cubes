@@ -10,3 +10,12 @@ js/creative.js
 css/creative.css
 LICENSE
 gulpfile.js
+load_stl.min.js
+OrbitControls.js
+parser.min.js
+Projector.js
+readme.txt
+stl_viewer.min.js
+three.min.js
+webgl_detector.js
+trisection.stl

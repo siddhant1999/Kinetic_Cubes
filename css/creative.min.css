@@ -109,7 +109,8 @@ img::-moz-selection{
         color:rgba(255,255,255,.7)
     }
     #mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover,#mainNav .navbar-nav>li.nav-item>a.nav-link:hover{
-        color:#fff
+        /*color:#fff*/
+        color: grey;
     }
     #mainNav.navbar-shrink{
         border-bottom:1px solid rgba(33,37,41,.1);
@@ -283,4 +284,7 @@ header.masthead p{
 }
 .paddingT0 {
     padding: 0px;
+}
+html { 
+  overflow: hidden;
 }

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Kinetic Cubes</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+  </head>
+  <body id="page-top">
+    <!-- Navigation -->
+    <nav class="shadow-sm navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <img id="logoimg" class="img-responsive" src="img/blogo.png" alt="Kinetic Cubes" height="50px"> 
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#process">Process</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#cart"><span class="fas fa-shopping-cart"></span> </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="conten">
+      <div class="container-fluid" style="padding: 0;">
+        <div class="row">
+          <div class="col-sm-8 paddingzero">
+            <div id="stl_cont"></div>
+          </div>
+          <div class="col-sm-4 padding-20">
+            <div id="custom">
+              <div id="intext">
+                <h2>Customize</h2>
+                <p>Personalize your cube with 3 vibrant colors</p>
+              </div>
+              <div class="tocen">
+                <div class="cont">
+                  <div class="parent">
+                <svg onfocus="focusit(1)" onfocusout="normal()" class="image1 focus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 143.11 252.25">
+                  <defs>
+                    <style>.cls-1{fill:black;}</style>
+                  </defs>
+                  <title>Asset 1</title>
+                  <g>
+                    <g>
+                      <path class="cls-1" d="M128.87,231.39a232.38,232.38,0,0,0,13.66,20.86L0,170V2.14c6.88-1,139.55-20.79,143.11,83.94C78.27,126.61,107.85,195.26,128.87,231.39Z"/>
+                    </g>
+                  </g>
+                </svg>
+                <svg onfocus="focusit(2)" onfocusout="normal()" class="image2 focus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 289.18 179.96">
+                  <defs>
+                    <style>.cls-2{fill:black;}</style>
+                  </defs>
+                  <title>Asset 2</title>
+                  <g>
+                    <g>
+                      <path class="cls-2" d="M25,81.21A231,231,0,0,0,0,82.52L144.44,0,289.18,85.46c-2.64,6.55-54.84,133-147,82.73C140.65,90.94,67,81.27,25,81.21Z"/>
+                    </g>
+                  </g>
+                </svg>
+                <svg onfocus="focusit(3)" onfocusout="normal()" class="image3 focus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 186.88 248.3">
+                  <defs>
+                    <style>.cls-3{fill:black;}</style>
+                  </defs>
+                  <title>Asset 3</title>
+                  <g>
+                    <g>
+                      <path class="cls-3" d="M175.62,22.25A228.11,228.11,0,0,0,186.88,0l-.21,164.58L41.23,248.3c-4.35-5.43-89.94-110.91-.95-166.24C107.76,118,154.79,58.49,175.62,22.25Z"/>
+                    </g>
+                  </g>
+                </svg>
+                  </div>
+                </div>
+                <div class="colorsw">
+                  <div class="rounded" onclick="updateAni('red')" id="red" value="red"  style="background-color: red;"></div>
+                  <div class="rounded" onclick="updateAni('blue')" id="blue" value="blue"   style="background-color: blue;"></div>
+                  <div class="rounded" onclick="updateAni('yellow')" id="yellow" value="  yellow" style="background-color: yellow;"></div>
+                  <div class="rounded" onclick="updateAni('green')" id="green" value="green " style="background-color: green;"></div>
+                  <br> 
+                  <div class="rounded" onclick="updateAni('orange')" id="orange" value="  orange" style="background-color: orange;"></div>
+                  <div class="rounded" onclick="updateAni('black')" id="black" value="black " style="background-color: black;"></div>
+                  <div class="rounded" onclick="updateAni('lime')" id="glow" value="glow"   style="background-color: lime;"></div>
+                  <div class="rounded" onclick="updateAni('white')" id="white" value="white " style="background-color: white; border:1px solid grey"></div>
+                  <br>
+                  <div class="rounded" onclick="updateAni('silver')" id="silver" value="  silver" style="background-color: grey;"></div>
+                  <div class="rounded" onclick="updateAni('plum')" id="pink" value="pink"   style="background-color: plum;"></div>
+                  <div class="rounded" onclick="updateAni('purple')" id="purple" value="  purple" style="background-color: purple;"></div>
+                  <div class="rounded" onclick="updateAni('DeepSkyBlue')" id="DeepSkyBlue"  value="DeepSkyBlue" style="background-color: DeepSkyBlue;"></div>
+                  </div>
+                </div>
+                <button id="btncart" type="button" class="btn btn-outline-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+
+        
+        <script src="stl_viewer.min.js"></script>        
+        <script>
+          console.log("Like taking a look under the hood huh?")
+          console.log("We like that")
+          console.log("Here is a coupon for ya:")
+          var focused = 1
+          var curCol= ["", "" ,"", ""]
+          document.getElementById("stl_cont").style.height = screen.height +"px"
+
+            var stl_viewer=new StlViewer
+            (
+                document.getElementById("stl_cont"),
+                {
+                    // auto_resize:true,
+                    auto_rotate:true,
+                    camerax:150,
+                    cameray:150,
+                    mouse_zoom: false,
+                    bgcolor:"#161721",
+                    zoom:150,
+                    models:
+                    [
+                      {id:1,filename:"trisection.stl", color:"#EF4135", rotationx:"1.5707963", rotationz:"1.5707963", display:"smooth"},//blue
+                      {id:2,filename:"trisection.stl", color:"#ffffff", rotationx:"3.1415926", rotationz:"-1.5707963", display:"smooth"},//red
+                      {id:3,filename:"trisection.stl", color:"#0055A4", display:"smooth"}//yellow
+                    ]
+                }
+            );
+
+          function focusit(theid){
+            focused=theid
+            if (curCol[parseInt(theid)] == "" || curCol[parseInt(theid)] == null){
+              return
+            }
+             document.getElementById(curCol[parseInt(theid)]).style.border= "3px solid black";
+
+          }
+          
+          function normal(){
+            //$(".colorsw div").css("opacity", 1);
+            // $(".colorsw div").css("border", "none");
+
+            // document.getElementById(curCol[parseInt(theid)]).style.borderBottom
+          }
+          function updateAni(colore='fuchia'){
+
+            if (focused == -1 ){
+                return
+            }
+            curCol[parseInt(focused)] = colore
+            stl_viewer.set_color(focused, colourNameToHex(colore));
+            st = ".cls-" + focused
+            $(st).css("fill", colourNameToHex(colore));
+            focused=-1
+          }
+
+
+
+
+
+          function colourNameToHex(colour)
+            {
+                var colours = {"aliceblue":"#f0f8ff","antiquewhite":"#faebd7","aqua":"#00ffff","            aquamarine":"#7fffd4","azure":"#f0ffff",
+                "beige":"#f5f5dc","bisque":"#ffe4c4","black":"#000000","blanchedalmond":"#ffebcd","blue"            :"#0000ff","blueviolet":"#8a2be2","brown":"#a52a2a","burlywood":"#deb887",
+                "cadetblue":"#5f9ea0","chartreuse":"#7fff00","chocolate":"#d2691e","coral":"#ff7f50","            cornflowerblue":"#6495ed","cornsilk":"#fff8dc","crimson":"#dc143c","cyan":"#00ffff",
+                "darkblue":"#00008b","darkcyan":"#008b8b","darkgoldenrod":"#b8860b","darkgray":"#a9a9a9"            ,"darkgreen":"#006400","darkkhaki":"#bdb76b","darkmagenta":"#8b008b","darkolivegreen":            "#556b2f",
+                "darkorange":"#ff8c00","darkorchid":"#9932cc","darkred":"#8b0000","darksalmon":"#e9967a"            ,"darkseagreen":"#8fbc8f","darkslateblue":"#483d8b","darkslategray":"#2f4f4f","           darkturquoise":"#00ced1",
+                "darkviolet":"#9400d3","deeppink":"#ff1493","deepskyblue":"#00bfff","dimgray":"#696969",            "dodgerblue":"#1e90ff",
+                "firebrick":"#b22222","floralwhite":"#fffaf0","forestgreen":"#228b22","fuchsia":"#ff00ff            ",
+                "gainsboro":"#dcdcdc","ghostwhite":"#f8f8ff","gold":"#ffd700","goldenrod":"#daa520","           gray":"#808080","green":"#008000","greenyellow":"#adff2f",
+                "honeydew":"#f0fff0","hotpink":"#ff69b4",
+                "indianred ":"#cd5c5c","indigo":"#4b0082","ivory":"#fffff0","khaki":"#f0e68c",
+                "lavender":"#e6e6fa","lavenderblush":"#fff0f5","lawngreen":"#7cfc00","lemonchiffon":"           #fffacd","lightblue":"#add8e6","lightcoral":"#f08080","lightcyan":"#e0ffff","           lightgoldenrodyellow":"#fafad2",
+                "lightgrey":"#d3d3d3","lightgreen":"#90ee90","lightpink":"#ffb6c1","lightsalmon":"            #ffa07a","lightseagreen":"#20b2aa","lightskyblue":"#87cefa","lightslategray":"#778899"            ,"lightsteelblue":"#b0c4de",
+                "lightyellow":"#ffffe0","lime":"#00ff00","limegreen":"#32cd32","linen":"#faf0e6",
+                "magenta":"#ff00ff","maroon":"#800000","mediumaquamarine":"#66cdaa","mediumblue":"            #0000cd","mediumorchid":"#ba55d3","mediumpurple":"#9370d8","mediumseagreen":"#3cb371",            "mediumslateblue":"#7b68ee",
+                "mediumspringgreen":"#00fa9a","mediumturquoise":"#48d1cc","mediumvioletred":"#c71585","           midnightblue":"#191970","mintcream":"#f5fffa","mistyrose":"#ffe4e1","moccasin":"          #ffe4b5",
+                "navajowhite":"#ffdead","navy":"#000080",
+                "oldlace":"#fdf5e6","olive":"#808000","olivedrab":"#6b8e23","orange":"#ffa500","            orangered":"#ff4500","orchid":"#da70d6",
+                "palegoldenrod":"#eee8aa","palegreen":"#98fb98","paleturquoise":"#afeeee","palevioletred            ":"#d87093","papayawhip":"#ffefd5","peachpuff":"#ffdab9","peru":"#cd853f","pink":"            #ffc0cb","plum":"#dda0dd","powderblue":"#b0e0e6","purple":"#800080",
+                "rebeccapurple":"#663399","red":"#ff0000","rosybrown":"#bc8f8f","royalblue":"#4169e1",
+                "saddlebrown":"#8b4513","salmon":"#fa8072","sandybrown":"#f4a460","seagreen":"#2e8b57","            seashell":"#fff5ee","sienna":"#a0522d","silver":"#c0c0c0","skyblue":"#87ceeb","           slateblue":"#6a5acd","slategray":"#708090","snow":"#fffafa","springgreen":"#00ff7f","           steelblue":"#4682b4",
+                "tan":"#d2b48c","teal":"#008080","thistle":"#d8bfd8","tomato":"#ff6347","turquoise":"           #40e0d0",
+                "violet":"#ee82ee",
+                "wheat":"#f5deb3","white":"#ffffff","whitesmoke":"#f5f5f5",
+                "yellow":"#ffff00","yellowgreen":"#9acd32"};
+            
+                if (typeof colours[colour.toLowerCase()] != 'undefined')
+                    return colours[colour.toLowerCase()];
+            
+                return false;
+            }
+
+            
+            
+        </script>
+
+  </body>
+  </html>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+
+
+
+
+
+<style type="text/css">
+  #stl_cont{
+    width: 100%;
+    /*height: 500px;*/
+  }
+
+.colorsw {
+  padding-top: 50px;
+  padding-left: calc(50% - 94px);
+
+
+
+
+
+}
+
+.colorsw div {
+  /*background: red;*/
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.colorsw div:hover {
+  cursor: pointer;
+  
+  }
+
+.colorsw div:active{
+  opacity: 0.7;
+  }
+.focus:hover{
+  opacity: 0.8;
+}
+.focus:focus {
+  opacity: 0.5;
+  outline: none;
+  /*border-bottom: 2px solid black;*/
+}
+
+.parent {
+  top: 10px;
+  left: calc(50% - 81px);
+  height: 200px;
+  position: relative;
+
+}
+.image1 {
+  top: 44px;
+  left: 1px;
+  z-index: 2;
+  height: 139px;
+  position: absolute;
+
+}
+.image2 {
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  height: 99px;
+  position: absolute;
+
+}
+.image3 {
+  z-index: 0;
+  top: 46px;
+  left: 56px;
+  position: absolute;
+  height: 138px;
+}
+
+.cls-1 {
+  fill: #EF4135;
+}
+.cls-2 {
+  fill: #FFFFFF;
+}
+.cls-3 {
+  fill: #0055A4;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: black;
+}
+#mainNav .navbar-nav>li.nav-item>a.nav-link, #mainNav .navbar-nav>li.nav-item>a.nav-link:focus {
+    color: black;
+}
+#mainNav {
+  background-color: white;
+}
+html body{
+  height: 100%;
+  background-color: #F5F5F5;
+}
+.nav.navbar-nav.navbar-right li a {
+    color: blue;
+}
+#custom {
+  margin-top: 50px;
+}
+.padding-20 {
+  padding-right:20px;
+  padding-left:20px;
+}
+#intext {
+  width: 70%;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+#btncart {
+  margin-top: 30px;
+  margin-left: calc(50% - 66px);
+  border: 1px solid #007bff;
+  border-radius: 1%;
+
+}
+</style>
