@@ -28,46 +28,14 @@
 
   // Collapse Navbar
   var navbarCollapse = function() {
-    // if($("#mainNav").css('background-color')=="rgba(0, 0, 0, 0)"){
-    //     $("#logoimg").attr("src","img/logo.png");
-    //     console.log("we are over here")
-    //   }
-    //   else {
-    //     $("#logoimg").attr("src","img/blogo.png");
-    //   }
-
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
-      $("#logoimg").addClass("thelogo");
+     //$("#logoimg").attr("src","img/blogo.png");
     } else {
-      // $("#logoimg").attr("src","img/header.jpg");
-      // console.log("changing into white")
       $("#mainNav").removeClass("navbar-shrink");
-      $("#logoimg").removeClass("thelogo");
-
+       //$("#logoimg").attr("src","img/logo.png");
     }
   };
-
-  // function changeit() {
-  //   console.log($( window ).width())
-  //   if($( window ).width() < 992){
-  //     console.log("heheheheheheh")
-  //     $("#logoimg").attr("src","img/blogo.png");
-  //   }
-  //   else {
-  //   if($("#mainNav").css('background-color')=="rgba(0, 0, 0, 0)"){
-  //       $("#logoimg").attr("src","img/logo.png");
-  //       console.log("this")
-  //     }
-  //     else {
-  //       console.log("or that")
-  //       $("#logoimg").attr("src","img/blogo.png");
-  //     }
-  //   }
-  // }
-
-  // $( window).scroll(changeit());
-  // $( window).resize(changeit());
   // Collapse now if page is not at top
   navbarCollapse();
   // Collapse the navbar when page is scrolled

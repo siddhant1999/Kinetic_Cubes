@@ -19,3 +19,6 @@ stl_viewer.min.js
 three.min.js
 webgl_detector.js
 trisection.stl
+*.svg
+CanvasRenderer.js
+stl_viewer/trisection_hole.stl

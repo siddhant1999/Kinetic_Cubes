@@ -103,17 +103,17 @@
                   <div class="rounded" onclick="updateAni('green')" id="green" value="green " style="background-color: green;"></div>
                   <br> 
                   <div class="rounded" onclick="updateAni('orange')" id="orange" value="  orange" style="background-color: orange;"></div>
-                  <div class="rounded" onclick="updateAni('black')" id="black" value="black " style="background-color: black;"></div>
-                  <div class="rounded" onclick="updateAni('lime')" id="glow" value="glow"   style="background-color: lime;"></div>
-                  <div class="rounded" onclick="updateAni('white')" id="white" value="white " style="background-color: white; border:1px solid grey"></div>
+                  <div class="rounded" onclick="updateAni('DarkSlateGray')" id="DarkSlateGray" value="black " style="background-color: DarkSlateGray;"></div>
+                  <div class="rounded" onclick="updateAni('lime')" id="lime" value="glow"   style="background-color: lime;"></div>
+                  <div class="rounded" onclick="updateAni('white')" id="white" value="white "></div>
                   <br>
                   <div class="rounded" onclick="updateAni('silver')" id="silver" value="  silver" style="background-color: grey;"></div>
-                  <div class="rounded" onclick="updateAni('plum')" id="pink" value="pink"   style="background-color: plum;"></div>
+                  <div class="rounded" onclick="updateAni('plum')" id="plum" value="pink"   style="background-color: plum;"></div>
                   <div class="rounded" onclick="updateAni('purple')" id="purple" value="  purple" style="background-color: purple;"></div>
                   <div class="rounded" onclick="updateAni('DeepSkyBlue')" id="DeepSkyBlue"  value="DeepSkyBlue" style="background-color: DeepSkyBlue;"></div>
                   </div>
                 </div>
-                <button id="btncart" type="button" class="btn btn-outline-primary">Add to Cart</button>
+                <button id="btncart" type="button" class="btn btn-outline-primary text-capitalize">Add to Cart</button>
             </div>
           </div>
         </div>
@@ -157,9 +157,15 @@
             if (curCol[parseInt(theid)] == "" || curCol[parseInt(theid)] == null){
               return
             }
-             document.getElementById(curCol[parseInt(theid)]).style.border= "3px solid black";
+            // document.getElementById(curCol[parseInt(theid)]).style.border= "3px solid black";
 
           }
+
+          function tothis(){
+            console.log("this is how a callback works")
+          }
+          console.log("over here")
+          // stl_viewer.on_model_mousedown(tothis());
           
           function normal(){
             //$(".colorsw div").css("opacity", 1);
@@ -174,9 +180,24 @@
             }
             curCol[parseInt(focused)] = colore
             stl_viewer.set_color(focused, colourNameToHex(colore));
+
             st = ".cls-" + focused
             $(st).css("fill", colourNameToHex(colore));
             focused=-1
+            $('.colorsw div').css("border", "none");
+            $('#white').css("border", "1px solid grey");
+
+            for (var i = 1;i < curCol.length; i++) {
+              console.log(i)
+
+              ss=curCol[i]
+              if (ss == "" || ss== null){
+                continue
+              }
+              console.log(ss)
+              document.getElementById(ss).style.border= "2px solid black";
+            }
+
           }
 
 
@@ -232,84 +253,13 @@
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js"></script>
-
-
-
+    <script src="js/creativetest.js"></script>
 
 
 <style type="text/css">
-  #stl_cont{
-    width: 100%;
-    /*height: 500px;*/
-  }
-
-.colorsw {
-  padding-top: 50px;
-  padding-left: calc(50% - 94px);
-
-
-
-
-
+html { 
+  overflow: hidden;
 }
-
-.colorsw div {
-  /*background: red;*/
-  height: 35px;
-  width: 35px;
-  display: inline-block;
-  margin-left: 4px;
-  margin-right: 4px;
-}
-.colorsw div:hover {
-  cursor: pointer;
-  
-  }
-
-.colorsw div:active{
-  opacity: 0.7;
-  }
-.focus:hover{
-  opacity: 0.8;
-}
-.focus:focus {
-  opacity: 0.5;
-  outline: none;
-  /*border-bottom: 2px solid black;*/
-}
-
-.parent {
-  top: 10px;
-  left: calc(50% - 81px);
-  height: 200px;
-  position: relative;
-
-}
-.image1 {
-  top: 44px;
-  left: 1px;
-  z-index: 2;
-  height: 139px;
-  position: absolute;
-
-}
-.image2 {
-  z-index: 1;
-  top: 0px;
-  left: 0px;
-  height: 99px;
-  position: absolute;
-
-}
-.image3 {
-  z-index: 0;
-  top: 46px;
-  left: 56px;
-  position: absolute;
-  height: 138px;
-}
-
 .cls-1 {
   fill: #EF4135;
 }
@@ -319,6 +269,16 @@
 .cls-3 {
   fill: #0055A4;
 }
+#navbarResponsive {
+  text-align: center;
+}
+@media (max-width:992px){
+  #logoimg {
+    height: 40px;
+  }
+}
+
+
 .navbar-light .navbar-nav .nav-link {
   color: black;
 }
@@ -331,28 +291,14 @@
 html body{
   height: 100%;
   background-color: #F5F5F5;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
 }
 .nav.navbar-nav.navbar-right li a {
     color: blue;
 }
-#custom {
-  margin-top: 50px;
+.nav-item {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
-.padding-20 {
-  padding-right:20px;
-  padding-left:20px;
-}
-#intext {
-  width: 70%;
-  margin-left:auto;
-  margin-right:auto;
 
-}
-#btncart {
-  margin-top: 30px;
-  margin-left: calc(50% - 66px);
-  border: 1px solid #007bff;
-  border-radius: 1%;
-
-}
 </style>

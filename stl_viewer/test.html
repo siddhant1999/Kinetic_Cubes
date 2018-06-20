@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js" integrity="sha384-u/bQvRA/1bobcXlcEYpsEdFVK/vJs3+T+nXLsBYJthmdBuavHvAW6UsmqO2Gd/F9" crossorigin="anonymous"></script>
+  </head>
+
+    <body>
+      <nav class="shadow-sm navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+          <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <img id="logoimg" class="img-responsive" src="blogo.png" alt="Kinetic Cubes"   height="60px"> 
+          </a>
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle=" collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"   aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
+      <section id="conten">
+        <div class="container-fluid" style="padding: 0;">
+          <div class="row">
+            <div class="col-md-8 padding-0">
+              <div id="stl_cont"></div>
+            </div>
+            <div class="col-md-4 padding-0">
+              <div id="custom">
+                <h2>Customize</h2>
+                <p>Personalize your cube with 3 vibrant colors</p>
+
+
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button id="1" onfocus="focusit(1)" onfocusout="normal()" class="focus">Color 1</button>
+                  <button id="2" onfocus="focusit(2)" onfocusout="normal()" class="focus">Color 2</button>
+                  <button id="3" onfocus="focusit(3)" onfocusout="normal()" class="focus">Color 3</button>
+                </div>
+
+
+                <div class="colorsw">
+                    <div class="rounded" onclick="updateAni('red')" id="red" value="red" style="background-color: red;"></div>
+                    <div class="rounded" onclick="updateAni('blue')" id="blue" value="blue" style="background-color: blue;"></div>
+                    <div class="rounded" onclick="updateAni('yellow')" id="yellow" value="yellow" style="background-color: yellow;"></div>
+                    <div class="rounded" onclick="updateAni('green')" id="green" value="green" style="background-color: green;"></div>
+                    <br> 
+                    <div class="rounded" onclick="updateAni('orange')" id="orange" value="orange" style="background-color: orange;"></div>
+                    <div class="rounded" onclick="updateAni('black')" id="black" value="black" style="background-color: black;"></div>
+                    <div class="rounded" onclick="updateAni('lime')" id="glow" value="glow" style="background-color: green;"></div>
+                    <div class="rounded" onclick="updateAni('white')" id="white" value="white" style="background-color: white; border:1px solid grey"></div>
+                    <br>
+                    <div class="rounded" onclick="updateAni('silver')" id="silver" value="silver" style="background-color: grey;"></div>
+                    <div class="rounded" onclick="updateAni('plum')" id="pink" value="pink" style="background-color: plum;"></div>
+                    <div class="rounded" onclick="updateAni('purple')" id="purple" value="purple" style="background-color: purple;"></div>
+                    <div class="rounded" onclick="updateAni('DeepSkyBlue')" id="DeepSkyBlue" value="DeepSkyBlue" style="background-color: DeepSkyBlue;"></div>
+                    
+                </div>
+              </div>
+              <div class="parent">
+
+                <img class="image1" height="150px" src="kl1.svg">
+                <img class="image2" height="150px" src="kl2.svg">
+                <img class="image3" height="150px" src="kl3.svg">
+              </div>
+            <!-- <div class="d-flex justify-content-between">
+                      <div class="p-2">A</div>
+                      <div class="p-2">B</div>
+                      <div class="p-2">C</div>
+                    </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+        
+        
+        <script src="stl_viewer.min.js"></script>        
+        <script>
+          console.log("Like taking a look under the hood huh?")
+          console.log("We like that")
+          console.log("Here is a coupon for ya:")
+          var focused = 1
+          var curCol= ["", "" ,"", ""]
+          document.getElementById("stl_cont").style.height = screen.height-100 +"px"
+
+            var stl_viewer=new StlViewer
+            (
+                document.getElementById("stl_cont"),
+                {
+                  	auto_resize:true,
+                    auto_rotate:true,
+                  	camerax:150,
+                  	cameray:150,
+                    mouse_zoom: false,
+                    bgcolor:"#100000",
+                    models:
+                    [
+                      {id:1,filename:"trisection.stl", color:"#EF4135", rotationx:"1.5707963", rotationz:"1.5707963", display:"smooth"},//blue
+                      {id:2,filename:"trisection.stl", color:"#ffffff", rotationx:"3.1415926", rotationz:"-1.5707963", display:"smooth"},//red
+                      {id:3,filename:"trisection.stl", color:"#0055A4", display:"smooth"}//yellow
+                    ]
+                }
+            );
+
+          function focusit(theid){
+            focused=theid
+            if (curCol[parseInt(theid)] == "" || curCol[parseInt(theid)] == null){
+              return
+            }
+            document.getElementById(curCol[parseInt(theid)]).style.borderBottom= "3px solid black";
+
+          }
+          
+          function normal(){
+            //$(".colorsw div").css("opacity", 1);
+            $(".colorsw div").css("border-bottom", "none");
+            // document.getElementById(curCol[parseInt(theid)]).style.borderBottom
+          }
+          function updateAni(colore='fuchia'){
+
+            if (focused == -1 ){
+                return
+            }
+            curCol[parseInt(focused)] = colore
+            stl_viewer.set_color(focused, colourNameToHex(colore));
+            focused=-1
+          }
+
+
+
+
+
+          function colourNameToHex(colour)
+            {
+                var colours = {"aliceblue":"#f0f8ff","antiquewhite":"#faebd7","aqua":"#00ffff","            aquamarine":"#7fffd4","azure":"#f0ffff",
+                "beige":"#f5f5dc","bisque":"#ffe4c4","black":"#000000","blanchedalmond":"#ffebcd","blue"            :"#0000ff","blueviolet":"#8a2be2","brown":"#a52a2a","burlywood":"#deb887",
+                "cadetblue":"#5f9ea0","chartreuse":"#7fff00","chocolate":"#d2691e","coral":"#ff7f50","            cornflowerblue":"#6495ed","cornsilk":"#fff8dc","crimson":"#dc143c","cyan":"#00ffff",
+                "darkblue":"#00008b","darkcyan":"#008b8b","darkgoldenrod":"#b8860b","darkgray":"#a9a9a9"            ,"darkgreen":"#006400","darkkhaki":"#bdb76b","darkmagenta":"#8b008b","darkolivegreen":            "#556b2f",
+                "darkorange":"#ff8c00","darkorchid":"#9932cc","darkred":"#8b0000","darksalmon":"#e9967a"            ,"darkseagreen":"#8fbc8f","darkslateblue":"#483d8b","darkslategray":"#2f4f4f","           darkturquoise":"#00ced1",
+                "darkviolet":"#9400d3","deeppink":"#ff1493","deepskyblue":"#00bfff","dimgray":"#696969",            "dodgerblue":"#1e90ff",
+                "firebrick":"#b22222","floralwhite":"#fffaf0","forestgreen":"#228b22","fuchsia":"#ff00ff            ",
+                "gainsboro":"#dcdcdc","ghostwhite":"#f8f8ff","gold":"#ffd700","goldenrod":"#daa520","           gray":"#808080","green":"#008000","greenyellow":"#adff2f",
+                "honeydew":"#f0fff0","hotpink":"#ff69b4",
+                "indianred ":"#cd5c5c","indigo":"#4b0082","ivory":"#fffff0","khaki":"#f0e68c",
+                "lavender":"#e6e6fa","lavenderblush":"#fff0f5","lawngreen":"#7cfc00","lemonchiffon":"           #fffacd","lightblue":"#add8e6","lightcoral":"#f08080","lightcyan":"#e0ffff","           lightgoldenrodyellow":"#fafad2",
+                "lightgrey":"#d3d3d3","lightgreen":"#90ee90","lightpink":"#ffb6c1","lightsalmon":"            #ffa07a","lightseagreen":"#20b2aa","lightskyblue":"#87cefa","lightslategray":"#778899"            ,"lightsteelblue":"#b0c4de",
+                "lightyellow":"#ffffe0","lime":"#00ff00","limegreen":"#32cd32","linen":"#faf0e6",
+                "magenta":"#ff00ff","maroon":"#800000","mediumaquamarine":"#66cdaa","mediumblue":"            #0000cd","mediumorchid":"#ba55d3","mediumpurple":"#9370d8","mediumseagreen":"#3cb371",            "mediumslateblue":"#7b68ee",
+                "mediumspringgreen":"#00fa9a","mediumturquoise":"#48d1cc","mediumvioletred":"#c71585","           midnightblue":"#191970","mintcream":"#f5fffa","mistyrose":"#ffe4e1","moccasin":"          #ffe4b5",
+                "navajowhite":"#ffdead","navy":"#000080",
+                "oldlace":"#fdf5e6","olive":"#808000","olivedrab":"#6b8e23","orange":"#ffa500","            orangered":"#ff4500","orchid":"#da70d6",
+                "palegoldenrod":"#eee8aa","palegreen":"#98fb98","paleturquoise":"#afeeee","palevioletred            ":"#d87093","papayawhip":"#ffefd5","peachpuff":"#ffdab9","peru":"#cd853f","pink":"            #ffc0cb","plum":"#dda0dd","powderblue":"#b0e0e6","purple":"#800080",
+                "rebeccapurple":"#663399","red":"#ff0000","rosybrown":"#bc8f8f","royalblue":"#4169e1",
+                "saddlebrown":"#8b4513","salmon":"#fa8072","sandybrown":"#f4a460","seagreen":"#2e8b57","            seashell":"#fff5ee","sienna":"#a0522d","silver":"#c0c0c0","skyblue":"#87ceeb","           slateblue":"#6a5acd","slategray":"#708090","snow":"#fffafa","springgreen":"#00ff7f","           steelblue":"#4682b4",
+                "tan":"#d2b48c","teal":"#008080","thistle":"#d8bfd8","tomato":"#ff6347","turquoise":"           #40e0d0",
+                "violet":"#ee82ee",
+                "wheat":"#f5deb3","white":"#ffffff","whitesmoke":"#f5f5f5",
+                "yellow":"#ffff00","yellowgreen":"#9acd32"};
+            
+                if (typeof colours[colour.toLowerCase()] != 'undefined')
+                    return colours[colour.toLowerCase()];
+            
+                return false;
+            }
+
+            
+            
+        </script>
+        
+    </body>
+</html>
+<style type="text/css">
+  #stl_cont{
+    width: 100%;
+    /*height: 500px;*/
+  }
+
+.colorsw div {
+  /*background: red;*/
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+}
+.colorsw div:hover {
+  cursor: pointer;
+  
+  }
+
+.colorsw div:active{
+  opacity: 0.7;
+  }
+
+.focus:focus {
+  opacity: 0.4;
+  /*border-bottom: 2px solid black;*/
+}
+.padding-0{
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.image3 {
+  fill: blue;
+  border: 10px solid blue;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#conten {
+  margin-top:86px;
+}
+nav {
+  background-color: white;
+}
+html body{
+  height: 100%;
+}
+.nav.navbar-nav.navbar-right li a {
+    color: blue;
+}
+#custom {
+  margin-top: 10px;
+}
+</style>
