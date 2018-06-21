@@ -23,7 +23,7 @@
     <nav class="shadow-sm navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <img id="logoimg" class="img-responsive" src="img/blogo.png" alt="Kinetic Cubes" height="50px"> 
+        <img id="logoim" class="img-responsive" src="img/blogo.png" alt="Kinetic Cubes" height="40px"> 
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -49,45 +49,47 @@
     <section id="conten">
       <div class="container-fluid" style="padding: 0;">
         <div class="row">
-          <div class="col-sm-8 paddingzero">
+          <div class="leftone col-sm-8 paddingzero">
             <div id="stl_cont"></div>
+          </div>
+          <div class="col-sm-8 paddingzero">
           </div>
           <div class="col-sm-4 padding-20">
             <div id="custom">
-              <div id="intext">
+              <div class="intext">
                 <h2>Customize</h2>
                 <p>Personalize your cube with 3 vibrant colors</p>
               </div>
               <div class="tocen">
                 <div class="cont">
                   <div class="parent">
-                <svg onfocus="focusit(1)" onfocusout="normal()" class="image1 focus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 143.11 252.25">
+                <svg onfocus="focusit(1)" class="image1 focus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 143.11 252.25">
                   <defs>
                     <style>.cls-1{fill:black;}</style>
                   </defs>
-                  <title>Asset 1</title>
+                  <title>Color 1</title>
                   <g>
                     <g>
                       <path class="cls-1" d="M128.87,231.39a232.38,232.38,0,0,0,13.66,20.86L0,170V2.14c6.88-1,139.55-20.79,143.11,83.94C78.27,126.61,107.85,195.26,128.87,231.39Z"/>
                     </g>
                   </g>
                 </svg>
-                <svg onfocus="focusit(2)" onfocusout="normal()" class="image2 focus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 289.18 179.96">
+                <svg onfocus="focusit(2)"  class="image2 focus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 289.18 179.96">
                   <defs>
                     <style>.cls-2{fill:black;}</style>
                   </defs>
-                  <title>Asset 2</title>
+                  <title>Color 2</title>
                   <g>
                     <g>
                       <path class="cls-2" d="M25,81.21A231,231,0,0,0,0,82.52L144.44,0,289.18,85.46c-2.64,6.55-54.84,133-147,82.73C140.65,90.94,67,81.27,25,81.21Z"/>
                     </g>
                   </g>
                 </svg>
-                <svg onfocus="focusit(3)" onfocusout="normal()" class="image3 focus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 186.88 248.3">
+                <svg onfocus="focusit(3)"  class="image3 focus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 186.88 248.3">
                   <defs>
                     <style>.cls-3{fill:black;}</style>
                   </defs>
-                  <title>Asset 3</title>
+                  <title>Color 3</title>
                   <g>
                     <g>
                       <path class="cls-3" d="M175.62,22.25A228.11,228.11,0,0,0,186.88,0l-.21,164.58L41.23,248.3c-4.35-5.43-89.94-110.91-.95-166.24C107.76,118,154.79,58.49,175.62,22.25Z"/>
@@ -97,23 +99,54 @@
                   </div>
                 </div>
                 <div class="colorsw">
-                  <div class="rounded" onclick="updateAni('red')" id="red" value="red"  style="background-color: red;"></div>
-                  <div class="rounded" onclick="updateAni('blue')" id="blue" value="blue"   style="background-color: blue;"></div>
-                  <div class="rounded" onclick="updateAni('yellow')" id="yellow" value="  yellow" style="background-color: yellow;"></div>
-                  <div class="rounded" onclick="updateAni('green')" id="green" value="green " style="background-color: green;"></div>
+                  <div class="rounded" onclick="updateAni('#ff3c30', 'red')" id="red" value="red"  style="background-color: #ff3c30;"></div>
+                  <div class="rounded" onclick="updateAni('#F76921','orange')" id="orange" value="  orange" style="background-color: #F76921;"></div>
+                  
+                  <div class="rounded" onclick="updateAni('#FCE634','yellow')" id="yellow" value="  yellow" style="background-color: #FCE634;"></div>
+                  <div class="rounded" onclick="updateAni('#03c163','green')" id="green" value="green " style="background-color: #03c163;"></div>
                   <br> 
-                  <div class="rounded" onclick="updateAni('orange')" id="orange" value="  orange" style="background-color: orange;"></div>
-                  <div class="rounded" onclick="updateAni('DarkSlateGray')" id="DarkSlateGray" value="black " style="background-color: DarkSlateGray;"></div>
-                  <div class="rounded" onclick="updateAni('lime')" id="lime" value="glow"   style="background-color: lime;"></div>
-                  <div class="rounded" onclick="updateAni('white')" id="white" value="white "></div>
+                  <div class="rounded" onclick="updateAni('#E18BC2','pink')" id="pink" value="pink"   style="background-color: #E18BC2;"></div>
+                  <div class="rounded" onclick="updateAni('#B342AB','purple')" id="purple" value="  purple" style="background-color: #B342AB;"></div>
+                  <div class="rounded" onclick="updateAni('#25c3ed','cyan')" id="cyan"  value="cyan" style="background-color: #25c3ed;"></div>
+                  <div class="rounded" onclick="updateAni('#0D1CB3','blue')" id="blue" value="blue"   style="background-color: #0D1CB3;"></div>
                   <br>
-                  <div class="rounded" onclick="updateAni('silver')" id="silver" value="  silver" style="background-color: grey;"></div>
-                  <div class="rounded" onclick="updateAni('plum')" id="plum" value="pink"   style="background-color: plum;"></div>
-                  <div class="rounded" onclick="updateAni('purple')" id="purple" value="  purple" style="background-color: purple;"></div>
-                  <div class="rounded" onclick="updateAni('DeepSkyBlue')" id="DeepSkyBlue"  value="DeepSkyBlue" style="background-color: DeepSkyBlue;"></div>
+
+                   <div class="rounded" onclick="updateAni('#3C3B36','black')" id="black" value="black" style="background-color: #3C3B36;"></div>
+                  <div class="rounded" title="Metalic Silver" onclick="updateAni('#b5b5bf','grey')" id="grey" value="grey" style="background:linear-gradient(90deg, rgba(117,117,124,1) 0%, rgba(152,152,161,1) 63%, rgba(207,211,218,1) 100%);"></div>
+                  <div class="rounded" title="Glow in the Dark" onclick="updateAni('#d5f0aa','glow')" id="glow" value="glow"   style="background: linear-gradient(90deg, rgba(213,240,170,1) 0%, rgba(231,255,193,1) 100%);"></div>
+                  <div class="rounded" onclick="updateAni('#F6FFFF','white')" id="white" value="white" style="background-color: #F6FFFF;"></div>
+                  <br>
+                  
+
+                  <div class="im"><img onclick="updateFlag('#ff3c30', '#FCE634', '#3C3B36', 'germany')" id="germany" class="flag rounded" src="img/germany.png"></div>
+                  <div class="im"><img onclick="updateFlag('#25c3ed', '#F6FFFF', '#FCE634', 'argentina')"id="argentina" class="flag rounded" src="img/argentina.png"></div>
+                  <div class="im"><img onclick="updateFlag('#ff3c30', '#F6FFFF', '#3C3B36', 'egypt')" id="egypt" class="flag rounded" src="img/egypt.png"></div>
+                  <div class="im"><img onclick="updateFlag('#ff3c30', '#0D1CB3', '#FCE634', 'colombia')" id="colombia" class="flag rounded" src="img/colombia.png"></div>
+                  <br>
+                  <div class="im"><img onclick="updateFlag('#0D1CB3', '#FCE634', '#03c163', 'brazil')" id="brazil" class="flag rounded" src="img/brazil.png"></div>
+                  
+                  <div class="im"><img onclick="updateFlag('#ff3c30', '#F6FFFF', '#03c163', 'mexico')" id="mexico" class="flag rounded" src="img/mexico.png"></div>
+                  <div class="im"><img onclick="updateFlag('#ff3c30', '#0D1CB3', '#F6FFFF', 'france')" id="france" class="flag rounded" src="img/france.png"></div>
+                  <div class="im"><img onclick="updateFlag('#ff3c30', '#FCE634', '#03c163', 'portugal')" id="portugal" class="flag rounded" src="img/portugal.png"></div>
                   </div>
                 </div>
-                <button id="btncart" type="button" class="btn btn-outline-primary text-capitalize">Add to Cart</button>
+                <button id="btncart" type="button" class="btn btn-outline-primary text-capitalize" onclick="process()">Add to Cart</button>
+
+                <div class="intext text-left" style="margin-top: 20px">
+                 <h3>
+                  29 USD
+                </h3>
+                 
+                  <h5><i>Free Global Shipping</i></h5>
+                  <p class="text-left">
+                    Full refunds & exchanges
+                    <br>
+                  For questions contact: <a href="mailto:contact@kineticcubes.com" target="_top">contact@kineticcubes.com</a>
+                
+                  
+                </p>
+                </div>
+                
             </div>
           </div>
         </div>
@@ -125,12 +158,33 @@
         
         <script src="stl_viewer.min.js"></script>        
         <script>
-          console.log("Like taking a look under the hood huh?")
-          console.log("We like that")
-          console.log("Here is a coupon for ya:")
+          var lookup=[]
+          lookup['#ff3c30'] = "Red"
+          lookup['#f76921'] = "Orange"
+          lookup['#fce634'] = "Yellow"
+          lookup['#03c163'] = "Green"
+
+          lookup['#e18bc2'] = "Pink"
+          lookup['#b342ab'] = "Purple"
+          lookup['#25c3ed'] = "Light Blue"
+          lookup['#0d1cb3'] = "Blue"
+
+          lookup['#3c3b36'] = "Black"
+          lookup['#b5b5bf'] = "Metalic Silver"
+          lookup['#d5f0aa'] = "Glow in the Dark"
+          lookup['#f6ffff'] = "White"
+
+
+
+          function theyell(){
+            console.log("Render ready");
+          }
+          // console.log("Like taking a look under the hood huh?")
+          // console.log("We like that")
+          // console.log("Here is a coupon for ya:")
           var focused = 1
           var curCol= ["", "" ,"", ""]
-          document.getElementById("stl_cont").style.height = screen.height +"px"
+           document.getElementById("stl_cont").style.height = screen.height +"px"
 
             var stl_viewer=new StlViewer
             (
@@ -140,17 +194,23 @@
                     auto_rotate:true,
                     camerax:150,
                     cameray:150,
+                    all_loaded_callback: theyell,
                     mouse_zoom: false,
                     bgcolor:"#161721",
                     zoom:150,
+                    view_edges: true,
                     models:
                     [
-                      {id:1,filename:"trisection.stl", color:"#EF4135", rotationx:"1.5707963", rotationz:"1.5707963", display:"smooth"},//blue
-                      {id:2,filename:"trisection.stl", color:"#ffffff", rotationx:"3.1415926", rotationz:"-1.5707963", display:"smooth"},//red
-                      {id:3,filename:"trisection.stl", color:"#0055A4", display:"smooth"}//yellow
+                      {id:1,filename:"trisection.stl", color:"#b342ab", rotationx:"1.5707963", rotationz:"1.5707963", display:"smooth"},//blue
+                      {id:2,filename:"trisection.stl", color:"#b5b5bf", rotationx:"3.1415926", rotationz:"-1.5707963", display:"smooth"},//red
+                      {id:3,filename:"trisection.stl", color:"#3C3B36", display:"smooth"}//yellow
                     ]
                 }
             );
+
+            curCol[1] = "#b342ab"
+            curCol[2] = "#b5b5bf"
+            curCol[3] = "#3C3B36"
 
           function focusit(theid){
             focused=theid
@@ -164,37 +224,76 @@
           function tothis(){
             console.log("this is how a callback works")
           }
-          console.log("over here")
           // stl_viewer.on_model_mousedown(tothis());
           
           function normal(){
+            stl_viewer.set_auto_rotate(false)
             //$(".colorsw div").css("opacity", 1);
             // $(".colorsw div").css("border", "none");
 
             // document.getElementById(curCol[parseInt(theid)]).style.borderBottom
           }
-          function updateAni(colore='fuchia'){
+          stl_viewer.set_on_model_mousedown(normal)
+
+          // var color1, color2, color3;
+
+          function updateFlag(c1, c2, c3, thename){
+            curCol[1] = c1
+            curCol[2] = c2
+            curCol[3] = c3
+            stl_viewer.set_color(1, c1);
+            stl_viewer.set_color(2, c2);
+            stl_viewer.set_color(3, c3);
+            st = ".cls-" + 1
+            $(st).css("fill", c1);
+            st = ".cls-" + 2
+            $(st).css("fill", c2);
+            st = ".cls-" + 3
+            $(st).css("fill", c3);
+
+            $('.colorsw div').css("border", "none");
+            $('.colorsw div img').css("border", "none");
+            $('#white').css("border", "1px solid grey");
+
+            ss=thename
+            document.getElementById(ss).style.border= "2px solid black";
+          }
+
+          function process(){
+            console.log(curCol)
+            for (var i = 1;i < curCol.length; i++) {
+              console.log(lookup[curCol[i].toLowerCase()])
+              //Harry Dong ^ this prints the 3 colors
+            }
+          }
+          theColor =[]
+
+          function updateAni(colore='fuchia', thename){
 
             if (focused == -1 ){
                 return
             }
             curCol[parseInt(focused)] = colore
-            stl_viewer.set_color(focused, colourNameToHex(colore));
+            stl_viewer.set_color(focused, colore);
+            theColor[parseInt(focused)] = thename
 
             st = ".cls-" + focused
-            $(st).css("fill", colourNameToHex(colore));
+            $(st).css("fill", colore);
             focused=-1
             $('.colorsw div').css("border", "none");
+            $('.colorsw div img').css("border", "none");
             $('#white').css("border", "1px solid grey");
 
-            for (var i = 1;i < curCol.length; i++) {
-              console.log(i)
+            for (var i = 1;i < theColor.length; i++) {
+              // console.log(i)
 
-              ss=curCol[i]
+              ss=theColor[i]
+
               if (ss == "" || ss== null){
                 continue
               }
-              console.log(ss)
+              // console.log("ss", ss)
+              // console.log(document.getElementById(ss))
               document.getElementById(ss).style.border= "2px solid black";
             }
 
@@ -204,7 +303,7 @@
 
 
 
-          function colourNameToHex(colour)
+          /*function colourNameToHex(colour)
             {
                 var colours = {"aliceblue":"#f0f8ff","antiquewhite":"#faebd7","aqua":"#00ffff","            aquamarine":"#7fffd4","azure":"#f0ffff",
                 "beige":"#f5f5dc","bisque":"#ffe4c4","black":"#000000","blanchedalmond":"#ffebcd","blue"            :"#0000ff","blueviolet":"#8a2be2","brown":"#a52a2a","burlywood":"#deb887",
@@ -236,7 +335,7 @@
             
                 return false;
             }
-
+            */
             
             
         </script>
@@ -257,27 +356,39 @@
 
 
 <style type="text/css">
+.leftone {
+  position: fixed;
+overflow: hidden;
+z-index: 1000;
+}
 html { 
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 .cls-1 {
-  fill: #EF4135;
+  fill: #b342ab;
 }
 .cls-2 {
-  fill: #FFFFFF;
+  fill: #b5b5bf;
 }
 .cls-3 {
-  fill: #0055A4;
+  fill: #3C3B36;
 }
 #navbarResponsive {
   text-align: center;
 }
-@media (max-width:992px){
-  #logoimg {
-    height: 40px;
-  }
+#conten {
+  overflow-y: scroll;
 }
 
+#stl_cont {
+  
+  height: 100%;
+  /*display: none;*/
+}
+::selection{
+    background:none;
+    text-shadow:none
+}
 
 .navbar-light .navbar-nav .nav-link {
   color: black;
@@ -291,7 +402,7 @@ html {
 html body{
   height: 100%;
   background-color: #F5F5F5;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
 
 }
 .nav.navbar-nav.navbar-right li a {
@@ -300,5 +411,13 @@ html body{
 .nav-item {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
-
+@media (max-width: 800px) {
+    br {
+        display: none;
+    }
+}
+section {
+    padding: 0rem 0;
+    padding-top: 4rem;
+}
 </style>

@@ -3,27 +3,30 @@ body,html{
     height:100%
 }
 body{
-    font-family:Merriweather,'Helvetica Neue',Arial,sans-serif
+
+    /*font-family:Merriweather,'Helvetica Neue',Arial,sans-serif*/
 }
 hr{
     max-width:50px;
     border-width:3px;
-    border-color:#f05f40
+    border-color:##007bff
 }
 hr.light{
     border-color:#fff
 }
 a{
-    color:#f05f40;
+    color:#007bff;
     -webkit-transition:all .2s;
     -moz-transition:all .2s;
     transition:all .2s
 }
 a:hover{
-    color:#f05f40
+    color:##007bff
 }
 h1,h2,h3,h4,h5,h6{
-    font-family:'Open Sans','Helvetica Neue',Arial,sans-serif
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 300;
+    /*font-family:'Open Sans','Helvetica Neue',Arial,sans-serif*/
 }
 .bg-primary{
     background-color:#fff!important
@@ -45,11 +48,7 @@ section{
     background:#212529;
     text-shadow:none
 }
-::selection{
-    color:#fff;
-    background:#212529;
-    text-shadow:none
-}
+
 img::selection{
     color:#fff;
     background:0 0
@@ -128,16 +127,16 @@ img::-moz-selection{
         content:url("../img/blogo.png");
     }
     #mainNav.navbar-shrink .navbar-brand{
-        color:#f05f40
+        color:#007bff
     }
     #mainNav.navbar-shrink .navbar-brand:focus,#mainNav.navbar-shrink .navbar-brand:hover{
-        color:#f05f40
+        color:#007bff
     }
     #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link,#mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus{
         color:#212529
     }
     #mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:focus:hover,#mainNav.navbar-shrink .navbar-nav>li.nav-item>a.nav-link:hover{
-        color:#f05f40
+        color:#007bff
     }
 }
 header.masthead{
@@ -239,7 +238,7 @@ header.masthead p{
     }
 }
 .text-primary{
-    color:#f05f40!important
+    color:#007bff!important
 }
 .btn{
     font-weight:700;
@@ -252,8 +251,8 @@ header.masthead p{
     padding:1rem 2rem
 }
 .btn-primary{
-    background-color:#f05f40;
-    border-color:#f05f40
+    background-color:#007bff;
+    border-color:#007bff
 }
 .btn-primary:active,.btn-primary:focus,.btn-primary:hover{
     color:#fff;
@@ -307,10 +306,6 @@ header.masthead p{
   padding-top: 50px;
   padding-left: calc(50% - 94px);
 
-
-
-
-
 }
 
 .colorsw div {
@@ -320,6 +315,7 @@ header.masthead p{
   display: inline-block;
   margin-left: 4px;
   margin-right: 4px;
+  text-shadow: 2px 2px 5px red;
 }
 .colorsw div:hover {
   cursor: pointer;
@@ -371,13 +367,13 @@ header.masthead p{
 
 
 #custom {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .padding-20 {
   padding-right:20px;
   padding-left:20px;
 }
-#intext {
+.intext {
   width: 70%;
   margin-left:auto;
   margin-right:auto;
@@ -386,10 +382,30 @@ header.masthead p{
 #white{
 border: 1px solid grey;
 }
+
+.flag {
+  height: 100%;
+  width: 100%;]
+}
+
+.colorsw .im {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.colorsw div img {
+  margin-top: 10px;
+}
+
 #btncart {
   font-weight: 600;
   margin-top: 30px;
   margin-left: calc(50% - 66px);
   border: 1px solid #007bff;
   border-radius: 1%;
+}
+@media (max-width:992px){
+  #logoim {
+    height: 40px;
+  }
 }
