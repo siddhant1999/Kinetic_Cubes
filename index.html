@@ -14,7 +14,7 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
@@ -23,9 +23,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css" rel="stylesheet">
-<link rel="icon" 
-      type="image/png" 
-      href="/img/favicon.png" />
+
   </head>
 
   <body id="page-top">
@@ -34,7 +32,7 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-          <img id="logoimg" class="img-responsive" src="img/logo.png" alt="Kinetic Cubes" height="40px"> 
+          <img id="logoimg" class="img-responsive" src="img/logo.png" alt="Kinetic Cubes" height="40px">
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -51,7 +49,7 @@
               <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a id="view-cart" class="nav-link js-scroll-trigger" href="#"><i class="fas fa-shopping-cart"></i> </a>
             </li>
           </ul>
         </div>
@@ -60,23 +58,70 @@
 
     <header class="masthead text-center text-white d-flex">
       <img  width='100%' src="vid/8k.gif">
-      
+
     </header>
 
     <section class="bg-primary" id="about">
       <!-- <div class="container"> -->
         <div class="row">
-          <div class="col-md-8  text-center">
-            <img width='100%' height="auto" src="img/mag.jpg">
+          <div id="mission" class="col-md-6  text-center">
+            <h2 style="margin-top:10px;">Our Mission</h2>
+            <h4 class="section-heading text-black" style="margin-top:35px;">We believe in crafting beautifully made products for people with an eye for design and engineering</h4>
+
           </div>
-          <div id="mission" class="col-md-4 p-0 text-center">
-            <h2>Our Mission</h2>
-            <h4>We believe in crafting beautifully made products for people with an eye for design and engineering</h4>
-            
+          <!-- <div class="col-md-1  text-center"></div> -->
+          <div class="col-md-6  text-center">
+            <img width='100%' height="auto" src="img/1.jpg">
+          </div>
+          <!-- <div class="col-md-1  text-center"></div> -->
+        <!-- </div> -->
+      </div>
+    </section>
+
+
+    <section class="bg-primary noupdown" id="toronto">
+      <!-- <div class="container"> -->
+        <div class="row">
+          <div class="col-md-8  text-center">
+            <img width='100%' height="auto" src="img/ttclong.png">
+          </div>
+
+          <div class="col-md-4  text-center">
+            <h2>Designed and Crafted in Toronto</h2>
+
           </div>
       </div>
     </section>
 
+
+    <section class="bg-primary noupdown" id="desk">
+      <!-- <div class="container"> -->
+        <div class="row">
+
+
+          <div class="col-md-7  text-center">
+            <h2>Designed and Crafted in Toronto</h2>
+
+          </div>
+          <div class="col-md-5  text-center">
+            <img width='100%' height="auto" src="img/white.png">
+          </div>
+      </div>
+    </section>
+    <form id="view-cart-form" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+    <input type="hidden" name="cmd" value="_s-xclick">
+    <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+    ">
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -89,13 +134,24 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
-
+    <script type="text/javascript">
+      $(document).ready(() => {
+        $("#view-cart").click(() => {
+          $("#view-cart-form").submit();
+        })
+      });
+    </script>
   </body>
 
 </html>
 <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="france">france</a> from <a href="https://www.flaticon.com/"     title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"     title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
  -->
 <style>
+.noupdown {
+  padding-top: 2em;
+  background-color: black !important;
+  padding-bottom: 2em;
+}
 h1,h2,h3,h4,h5,h6 {
   /*background-color: black;*/
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -107,70 +163,22 @@ h1,h2,h3,h4,h5,h6 {
 }
 #about {
   padding: 0;
-  background-color: #E33D8E !important;
+}
+#mission {
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+#toronto {
+  color: white;
+}
+#about {
+  background-color: black !important;
 }
 
-
-#custom {
-  margin-top: 30px;
 }
-.padding-20 {
-  padding-right:20px;
-  padding-left:20px;
-}
-.intext {
-  width: 70%;
-  margin-left:auto;
-  margin-right:auto;
-
-}
-#white{
-border: 1px solid grey;
-}
-
-.flag {
-  height: 100%;
-  width: 100%;
-}
-
-.colorsw .im {
-  margin-top: 4px;
-  margin-bottom: 4px;
-}
-
-.colorsw div img {
-  margin-top: 10px;
-}
-
-#btncart {
-  font-weight: 600;
-  margin-top: 30px;
-  margin-left: calc(50% - 66px);
-  border: 1px solid #007bff;
-  border-radius: 1%;
-}
-.image1 {
-  top: 44px;
-  left: 1px;
-  z-index: 2;
-  height: 139px;
-  position: absolute;
-
-}
-.image2 {
-  z-index: 1;
-  top: 0px;
-  left: 1px;
-  height: 99px;
-  position: absolute;
-
-}
-.image3 {
-  z-index: 0;
-  top: 46px;
-  left: 56px;
-  position: absolute;
-  height: 138px;
+#desk {
+  color: black;
+  background-color: white !important;
 }
 
 </style>
