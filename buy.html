@@ -25,22 +25,19 @@
     <!-- Navigation -->
     <nav class="shadow-sm navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <a class="navbar-brand js-scroll-trigger" href="https://kineticcubes.com/">
         <img id="logoim" class="img-responsive" src="img/blogo.png" alt="Kinetic Cubes" height="40px">
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
+        <div class="collapse navbar-collapse text-center" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="https://kineticcubes.com/#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#process">Process</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="https://kineticcubes.com/#footer">Contact</a>
             </li>
             <li class="nav-item">
               <a id="view-cart" class="nav-link js-scroll-trigger" href="#"><span class="fas fa-shopping-cart"></span> </a>
@@ -121,16 +118,18 @@
                   <br>
 
 
-                  <div class="im"><img onclick="updateFlag('#ff3c30', '#FCE634', '#3C3B36', 'germany')" id="germany" class="flag rounded" src="img/germany.png"></div>
-                  <div class="im"><img onclick="updateFlag('#25c3ed', '#F6FFFF', '#FCE634', 'argentina')"id="argentina" class="flag rounded" src="img/argentina.png"></div>
-                  <div class="im"><img onclick="updateFlag('#ff3c30', '#F6FFFF', '#3C3B36', 'egypt')" id="egypt" class="flag rounded" src="img/egypt.png"></div>
+                  <div class="im"><img onclick="updateFlag('#0D1CB3', '#FCE634', '#03c163', 'brazil')" id="brazil" class="flag rounded" src="img/brazil.png"></div>
+                  <div class="im"><img onclick="updateFlag('#25c3ed', '#F6FFFF', '#FCE634', 'uruguay')"id="uruguay" class="flag rounded" src="img/uruguay.png"></div>
+                  <div class="im"><img onclick="updateFlag('#ff3c30', '#0D1CB3', '#F6FFFF', 'usa')" id="usa" class="flag rounded" src="img/usa.png"></div>
                   <div class="im"><img onclick="updateFlag('#ff3c30', '#0D1CB3', '#FCE634', 'colombia')" id="colombia" class="flag rounded" src="img/colombia.png"></div>
                   <br>
-                  <div class="im"><img onclick="updateFlag('#0D1CB3', '#FCE634', '#03c163', 'brazil')" id="brazil" class="flag rounded" src="img/brazil.png"></div>
+                  
+                  <div class="im"><img onclick="updateFlag('#ff3c30', '#FCE634', '#3C3B36', 'belgium')" id="belgium" class="flag rounded" src="img/belgium.png"></div>
 
                   <div class="im"><img onclick="updateFlag('#ff3c30', '#F6FFFF', '#03c163', 'mexico')" id="mexico" class="flag rounded" src="img/mexico.png"></div>
                   <div class="im"><img onclick="updateFlag('#ff3c30', '#0D1CB3', '#F6FFFF', 'france')" id="france" class="flag rounded" src="img/france.png"></div>
-                  <div class="im"><img onclick="updateFlag('#ff3c30', '#FCE634', '#03c163', 'portugal')" id="portugal" class="flag rounded" src="img/portugal.png"></div>
+                  <div class="im"><img onclick="updateFlag('#ff3c30', '#F6FFFF', '#3C3B36', 'egypt')" id="egypt" class="flag rounded" src="img/egypt.png"></div>
+                  
                   </div>
                 </div>
                 <form id="paypal-form" style="opacity:0" target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
@@ -219,9 +218,9 @@
                     view_edges: true,
                     models:
                     [
-                      {id:1,filename:"trisection.stl", color:"#b342ab", rotationx:"1.5707963", rotationz:"1.5707963", display:"smooth"},//blue
-                      {id:2,filename:"trisection.stl", color:"#b5b5bf", rotationx:"3.1415926", rotationz:"-1.5707963", display:"smooth"},//red
-                      {id:3,filename:"trisection.stl", color:"#3C3B36", display:"smooth"}//yellow
+                      {id:1,filename:"trisection.stl", color:"#ff3c30", rotationx:"1.5707963", rotationz:"1.5707963", display:"smooth"},//blue
+                      {id:2,filename:"trisection.stl", color:"#0d1cb3", rotationx:"3.1415926", rotationz:"-1.5707963", display:"smooth"},//red
+                      {id:3,filename:"trisection.stl", color:"#f6ffff", display:"smooth"}//yellow
                     ]
                 }
             );
@@ -401,13 +400,13 @@ html {
   /*overflow: hidden;*/
 }
 .cls-1 {
-  fill: #b342ab;
+  fill: #ff3c30;
 }
 .cls-2 {
-  fill: #b5b5bf;
+  fill: #0d1cb3;
 }
 .cls-3 {
-  fill: #3C3B36;
+  fill: #f6ffff;
 }
 #navbarResponsive {
   text-align: center;
@@ -444,17 +443,30 @@ html body{
   font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
 
 }
+.leftone {
+  display: none;
+}
 .nav.navbar-nav.navbar-right li a {
     color: blue;
 }
 .nav-item {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
-@media (max-width: 800px) {
-    br {
+#logoim {
+      height: 30px;
+    }
+@media (min-width: 678px) {
+    /*br {
         display: none;
+    }*/
+    .leftone {
+      display: inherit;
+    }
+    #logoim {
+      height: 40px;
     }
 }
+
 section {
     padding: 0rem 0;
     padding-top: 4rem;

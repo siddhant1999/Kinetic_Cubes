@@ -22,3 +22,4 @@ trisection.stl
 *.svg
 CanvasRenderer.js
 stl_viewer/trisection_hole.stl
+*.ttf
