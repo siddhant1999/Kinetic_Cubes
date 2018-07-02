@@ -2,6 +2,30 @@ body,html{
     width:100%;
     height:100%
 }
+@font-face {
+    font-family: EraserDust;
+    src: url('/EraserDust.ttf');
+  }
+  @font-face {
+    font-family: Chalk;
+    src: url('/Chalk.ttf');
+  }
+  @font-face {
+    font-family: SFB;
+    src: url('/SF-Pro-Text-Bold.otf');
+  }
+  @font-face {
+    font-family: SFM;
+    src: url('/SF-Pro-Text-Medium.otf');
+  }
+  @font-face {
+    font-family: SFR;
+    src: url('/SF-Pro-Text-Regular.otf');
+  }
+  @font-face {
+    font-family: SFL;
+    src: url('/SF-Pro-Text-Light.otf');
+  }
 body{
 
     /*font-family:Merriweather,'Helvetica Neue',Arial,sans-serif*/
@@ -24,7 +48,7 @@ a:hover{
     color:##007bff
 }
 h1,h2,h3,h4,h5,h6{
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: SFL, -apple-system, BlinkMacSystemFont, sans-serif;
     font-weight: 300;
     /*font-family:'Open Sans','Helvetica Neue',Arial,sans-serif*/
 }
@@ -64,13 +88,13 @@ img::-moz-selection{
     border-bottom:1px solid rgba(33,37,41,.1);
     background-color:#fff;
     /*font-family:'Open Sans','Helvetica Neue',Arial,sans-serif;*/
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: SFL, -apple-system, BlinkMacSystemFont, sans-serif;
     -webkit-transition:all .2s;
     -moz-transition:all .2s;
     transition:all .2s
 }
 #mainNav .navbar-brand{
-    font-weight:550;
+    font-weight:510;
     text-transform:uppercase;
     color:grey;
     font-family:'Open Sans','Helvetica Neue',Arial,sans-serif
@@ -80,7 +104,7 @@ img::-moz-selection{
 }
 #mainNav .navbar-nav>li.nav-item>a.nav-link,#mainNav .navbar-nav>li.nav-item>a.nav-link:focus{
     font-size:.9rem;
-    font-weight:550;
+    font-weight:510;
     text-transform:uppercase;
     color:#212529
 }
@@ -402,7 +426,7 @@ border: 1px solid grey;
   margin-top: 30px;
   margin-left: calc(50% - 59px);
   border: 1px solid #007bff;
-  border-radius: 1%;
+  border-radius: 3px;
 }
 @media (max-width:992px){
   #logoim {

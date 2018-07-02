@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: SFL, -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 300 !important;
   /*font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;*/
 }
@@ -38,7 +38,7 @@ h4,
 h5,
 h6 {
   font-weight: 300 !important;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: SFR, -apple-system, BlinkMacSystemFont, sans-serif;
   /*font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;*/
 }
 
@@ -110,7 +110,7 @@ img::-moz-selection {
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
   font-size: .9rem;
-  font-weight: 550;
+  font-weight: 510;
   text-transform: uppercase;
   color: #212529;
 }
@@ -377,7 +377,7 @@ header.masthead p {
   transition-delay: 1s;
   animation: fadeIn 2.5s ease forwards;
 }
-
+/*
 @keyframes moveLeft {
   0% {
     transform: translate(0%, 0%);
@@ -386,7 +386,7 @@ header.masthead p {
   100% {
     transform: translate(50%, 0%);
   }
-}
+}*/
 
 
 @keyframes fadeIn {
@@ -427,17 +427,40 @@ header.masthead p {
   background-color: transparent;
 }
 
+.moveRight {
+  opacity: 0;
+  animation: moveRight 5s ease forwards;
+}
+
 @keyframes moveLeft {
   0% {
     transform: translate(0%, 0%);
   }
 
   50% {
+    
     transform: translate(0%, 0%);
   }
 
   100% {
-    transform: translate(-30%, 0%);
+    
+    transform: translate(-25%, 0%);
+  }
+}
+@keyframes moveRight {
+  0% {
+    transform: translate(0%, 0%);
+  }
+
+  50% {
+    display: inline;
+    opacity: 0;
+    transform: translate(0%, 0%);
+  }
+
+  100% {
+    opacity: 0.9;
+    transform: translate(30%, 0%);
   }
 }
 

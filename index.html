@@ -8,15 +8,48 @@
     font-family: Chalk;
     src: url('/Chalk.ttf');
   }
+  @font-face {
+    font-family: SFB;
+    src: url('/SF-Pro-Text-Bold.otf');
+  }
+  @font-face {
+    font-family: SFM;
+    src: url('/SF-Pro-Text-Medium.otf');
+  }
+  @font-face {
+    font-family: SFR;
+    src: url('/SF-Pro-Text-Regular.otf');
+  }
+  @font-face {
+    font-family: SFL;
+    src: url('/SF-Pro-Text-Light.otf');
+  }
+  #buybar {
+    background: linear-gradient(#4083ef, #2464c9);
+    color: white;
+    padding: 3px 20px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 25px -5px #007bffab;
+    transition: 0.3s;
+}
+
+#buybar:hover {
+  padding: 3px 24px;
+  transition: 0.2s;
+  cursor: pointer;
+}
 </style>
 <html lang="en">
+
   <head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Kinetic Cubes</title>
+    <title>Kinetic Cubes | Beautiful Helix Cut Cubes</title>
+    <meta property="og:image" content="img/mag.jpg" />
+    <meta property="og:title" content="Kinetic Cubes | Beautiful Helix Cut Cubes" />
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom fonts for this template -->
@@ -65,9 +98,9 @@
               </div>
             </div>
           </div>
-          <div id="herotext" style="opacity:0; display:none;position:absolute;margin-top:24%;right:20%;text-align: left;width:30%;">
+          <div class="moveRight" id="herotext" style="display:inline;position:absolute;margin-top:24%;right:20%;text-align: left;width:30%;font-family: SFR;">
             <h1 >Engineering.<br>Meet Design.</h1>
-            <h5>Cut a cube with a curve and have it all snap together</h5>
+            <h5 style="font-family: SFL;">Cut a cube with a curve and have it all snap together</h5>
           </div>
         </div>
       </div>
@@ -75,12 +108,12 @@
     <section class=" padding0" id="about">
       <div class="container-fluid nopadding">
         <div class="row no-gutters">
-          <div class="col-sm-78 ">
+          <div class=" col-sm-78 col-lg-pull-8">
             <img src="img/mag.jpg">
           </div>
-          <div class="col-sm-42  text-center">
+          <div class="col-sm-42 col-lg-push-8 text-center">
             <div class="texth">
-              <h1 class="section-heading text-white subhead">A Spark in Our Mind to a Snap in Your Hand</h1>
+              <h1 class=" section-heading text-white subhead">A Spark in Our Mind to a Snap in Your Hand</h1>
               <p class="text-faded ">A reflection of the creator within, our helix cut cubes are 3D printed just for you</p>
             </div>
           </div>
@@ -106,7 +139,7 @@
       <div class="container-fluid nopadding">
         <div class="row no-gutters">
           <div class="col-sm-78 ">
-            <img src="img/tor.png">
+            <img src="img/tor.jpg">
           </div>
           <div class="col-sm-42  text-center">
             <div class="texth">
@@ -136,7 +169,7 @@
       <div class="container-fluid nopadding">
         <div class="row no-gutters">
           <div class="col-sm-78 ">
-            <img src="img/tree.png">
+            <img src="img/tree.jpg">
           </div>
           <div class="col-sm-42  text-center">
             <div class="texth">
@@ -151,12 +184,12 @@
       <div class="container-fluid nopadding">
         <div class="row no-gutters">
           <div class="col-x-3  text-center">
-            <img src="img/dna.png">
+            <img src="img/dna.jpg">
           </div>
           <div class="col-x-5  text-center">
-            <div class="texth">
-              <h1 class="section-heading" style="text-align: left;">A Refined Design</h1>
-              <h1 class="section-heading" style="text-align: right;">Printed Line by Line</h1>
+            <div class="texth" style="margin-left: 0;">
+              <h1 id="refined" class="section-heading" style="text-align: left;">A Refined Design</h1>
+              <h1 id="lineByLine" class="section-heading" style="text-align: right;">Printed Line by Line</h1>
             </div>
           </div>
           <div class="col-x-4 somepad">
@@ -168,7 +201,7 @@
     <section class=" padding0" id="fifa">
       <div class="container-fluid nopadding fifacon">
         <div class="row no-gutters">
-          <img src="img/german.png">
+          <img src="img/german.jpg">
           <div class="overtext">
             <h1>Mix and <i>Match</i></h1>
             <h2>Support your nation</h2>
@@ -186,7 +219,7 @@
               <div id="ship"><i>Free Worldwide Shipping</i></div>
             </button>
             <br>
-            <div class="avail">Available this July</div>
+            <div class="avail">Available this August</div>
           </div>
         </div>
       </div>
@@ -194,17 +227,17 @@
 
     <section class=" padding0" id="footer">
       <div class="container-fluid nopadding">
-        <div class="row no-gutters" style="background-color: #23223E !important;">
+        <div class="row no-gutters" style="background-color: #1d212b !important;">
           <div class="col-smm-3">
             <img id="foottestlogo" height="100%" onclick="window.location.href='https://kineticcubes.com/'" src="img/logos.png">
           </div>
           <div class="col-smm-6">
             <div class="copyinfo text-center">© 2018 Copyright | <a href="https://kineticcubes.com/">Kinetic Cubes</a> | All Rights Reserved <br><i class="fa fa-envelope"></i> <a href="mailto:contact@kineticcubes.com">contact@kineticcubes.com</a><br><i class="fa fa-phone"></i> <a href="tel:++12893872231"> +1 (289)-387-2231</a></div>
           </div>
-          <div class="col-smm-3 text-center social">
-            <p class="fa fa-facebook-official" onclick="window.open('https://www.facebook.com/', '_blank')" style="font-size:40px;background-color:transparent;;color:white;opacity: 0.9;"></p>
-            <p class="fa fa-instagram" onclick="window.open('https://www.instagram.com/kineticcubes/', '_blank')" style="font-size:40px;background-color:transparent;;color:white;opacity: 0.9;margin-left: 5%;"></p>
-          </div>
+          <!-- <div class="col-smm-3 text-center social">
+            <p class="fa fa-facebook-official" onclick="window.open('https://www.facebook.com/', '_blank')" style="font-size:30px;background-color:transparent;;color:white;opacity: 0.9;"></p>
+            <p class="fa fa-instagram" onclick="window.open('https://www.instagram.com/kineticcubes/', '_blank')" style="font-size:30px;background-color:transparent;;color:white;opacity: 0.9;margin-left: 5%;"></p>
+          </div> -->
         </div>
         </div>
       </div>
@@ -242,50 +275,56 @@
 </html>
 <script>
 $( document ).ready(function() {
-  setTimeout(function () {
-    document.getElementById('herotext').style.display = "inline";
-    document.getElementById('herotext').style.fontSize="0.5em !important";
+    // document.getElementById('herotext').style.display = "inline";
+    // document.getElementById('herotext').style.fontSize="0.5em !important";
+    // $("#herotext").css("min-width", "35%");
     dime = $( document ).width();
-    rightval = "5%"
+    rightval = "10%"
 
     if (dime < 768){
       // alert(dime);
       $("#herotext").css("width", "42%");
-      $("#herotext").css("margin-top", "15%");
+      $("#herotext").css("margin-top", "20%");
       $(".copyright").css("font-size", "0.8em");
       $(".copyright").css("margin-top", "0");
       $("#footlogo").css("margin-bottom", "15px");
       $('#herotext h1').replaceWith(function () {
-        return "<h3>" + $(this).html() + "</h3>";
+        return "<h4>" + $(this).html() + "</h5>";
+      });
+      $('#herotext h5').replaceWith(function () {
+        return "<h6>" + $(this).html() + "</h6>";
       });
 
       rightval="5%"
 
     }
-    $("#herotext").animate({
-      right: rightval,
-      opacity: '0.9'
-    }, 2000);
-  }, 2500);
 });
 </script>
 <style>
 
+#herotext {
+  display: inline;
+  font-size: 0.5em !important;
+  min-width: 35%;
+  opacity: 0;
+}
+
 .texth {
   padding-top: 5%;
   padding-bottom: 5%;
-  max-width: 90%;
+  max-width: 73%;/*can make 90*/
   margin-left:auto;
   margin-right: auto;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  text-align: left;
+  text-align: center;
 }
 
 #print h1 {
-  font-size: 3.7vw;
-  margin-top: 15%;
+  font-size: 3.6vw;
+  /*margin-top: 15%;*/
+  white-space: nowrap
 }
 
 #print .texth {
@@ -326,12 +365,13 @@ $( document ).ready(function() {
   min-height: 1px;
 }
 .subhead {
-    font-size: 1.5em;
+    font-size: 5.9vw;
   }
 
 #preorder {
   font-weight: 200;
   font-size: 4vw;/*can be 3vw*/
+  line-height: 1.2;
 }
 
 #ship {
@@ -342,13 +382,47 @@ $( document ).ready(function() {
 
 .avail {
   margin-top: 5%;
-  margin-left: 5%;
   font-weight: 200;
   font-size: 2.2vw;
+  text-align: center;
+  color: rgba(255,255,255,0.5);
 }
+
+@media (min-width: 768px) {
+  .subhead {
+    font-size: 3.9vw;
+  }
+
+  .social p{
+    
+    transform: translateY(-20%);
+    /*margin-right: 5%;*/
+}
+
+  .copyinfo {
+    font-size: 1em;
+  }
+  #footer {
+    background-color: ##1d212b !important;
+  }
+  
+  .copyright {
+    padding-top: 5px;
+    width: auto;
+    text-align: left;
+    color: white !important;
+    font-size: 1em;
+    margin-top: 20px;
+    margin-left: 3%;
+    margin-right: 3%
+    /*margin: 2%;*/
+  }
+
+}
+
 @media (min-width: 992px) {
   .subhead {
-    font-size: 2.5em;
+    font-size: 2.2em;
   }
   .col-lg-78 {
     -ms-flex: 0 0 65%;
@@ -373,18 +447,19 @@ $( document ).ready(function() {
   .texth {
     /*margin-top: 15%;*/
     /*margin-top: 20%;*/
+    text-align: left;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
   }
   .texth p {
-    margin-top: 10% !important;
+    margin-top: 5% !important;
   }
   #print .texth {
     max-width: 80%;
   }
   #print h1 {
-    font-size: 2.5em;
+    font-size: 2.4em;
   }
   .ordercon .overtext {
     right: 10%;
@@ -417,6 +492,14 @@ $( document ).ready(function() {
     top: 50%;
     transform: translateY(-50%);
   }
+}
+
+#refined {
+
+}
+
+#lineByLine {
+  padding-top: 0px;
 }
 
 
@@ -508,8 +591,8 @@ section img {
 .fifacon .overtext {
   position: absolute;
   color: white;
-  top: 55%;
-  left: 16px;
+  top: 68%;
+  left: 7%;
 }
 
 
@@ -518,8 +601,9 @@ section img {
   background-color: #007bff;
   z-index: 9999;
   text-transform: capitalize !important;
-  padding:4% 12%;
-  border-radius: 15px;
+  padding: 5% 14%;
+  border-radius: 8px;
+  box-shadow: 0px 0px 25px 0px #007bffab;
 }
 
 .col-md-1 {
@@ -593,11 +677,8 @@ section img {
 /*#footer p:hover{
   opacity: 0.5 !important;
 }*/
-#buybar {
-    background-color: #007bffab;
-    padding: 3px 20px;
-    border-radius: 5px;
-}
+
+
 .col-x-3 {
   width:25%;
 }
@@ -643,7 +724,7 @@ margin-right: 20% !important;
   width: 100%;
   text-align: center;
   color: white !important;
-  font-size: 2.2vw;
+  /*font-size: 2.2vw;*/
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 3%;
@@ -654,33 +735,6 @@ margin-right: 20% !important;
   color: white !important;
 }
 
-@media (min-width: 768px) {
-  .social p{
-    
-    transform: translateY(-20%);
-    /*margin-right: 5%;*/
-}
-
-  .copyinfo {
-    font-size: 1em;
-  }
-  #footer {
-    background-color: ##1d212b !important;
-  }
-  
-  .copyright {
-    padding-top: 5px;
-    width: auto;
-    text-align: left;
-    color: white !important;
-    font-size: 1em;
-    margin-top: 20px;
-    margin-left: 3%;
-    margin-right: 3%
-    /*margin: 2%;*/
-  }
-
-}
 /*.texth {
   position: relative;
   top: 50%;
