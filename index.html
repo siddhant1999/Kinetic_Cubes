@@ -42,6 +42,16 @@
 <html lang="en">
 
   <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121647578-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-121647578-1');
+</script>
+
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -63,8 +73,37 @@
     <link rel="icon"
       type="image/png"
       href="/img/favicon.png" />
+
+
+      <!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '606067953110585');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=606067953110585&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
   </head>
   <body id="page-top">
+    <div style="display:none;"><img src="img/heroimg/green.png"></div>
+    <div style="display:none;"><img src="img/heroimg/blue.png"></div>
+    <div style="display:none;"><img src="img/heroimg/cyan.png"></div>
+    <div style="display:none;"><img src="img/heroimg/magenta.png"></div>
+    <div style="display:none;"><img src="img/heroimg/purple.png"></div>
+    <div style="display:none;"><img src="img/heroimg/white.png"></div>
+    <div style="display:none;"><img src="img/heroimg/black.png"></div>
+    <div style="display:none;"><img src="img/heroimg/yellow.png"></div>
+    <div style="display:none;"><img src="img/heroimg/orange.png"></div>
+    <div style="display:none;"><img src="img/heroimg/red.png"></div>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
@@ -93,7 +132,7 @@
           <div id="heromax">
             <div class="moveLeft">
               <div class="heroImage">
-                <div class="cube"><img src="img/kc.png"></div>
+                <div class="cube"><img style="border: none;" id="heroimgurl"><!-- <img src="img/kc.png"> --></div>
                 <div class="glow"></div>
               </div>
             </div>
@@ -215,11 +254,11 @@
           <img src="img/cube.jpg">
           <div class="overtext">
             <button onclick="window.location.href='https://kineticcubes.com/buy'" type="button" class="btn btn-primary">
-              <div id="preorder">Preorder Now</div>
+              <div id="preorder">Order Now</div>
               <div id="ship"><i>Free Worldwide Shipping</i></div>
             </button>
             <br>
-            <div class="avail">Available this August</div>
+            <div class="avail">Available Now</div>
           </div>
         </div>
       </div>
@@ -275,6 +314,26 @@
 </html>
 <script>
 $( document ).ready(function() {
+
+    //choose image
+
+    herolist = new Array();
+    herolist[0] = "img/heroimg/black.png";
+    herolist[1] = "img/heroimg/blue.png";
+    herolist[2] = "img/heroimg/cyan.png";
+    herolist[3] = "img/heroimg/green.png";
+    herolist[4] = "img/heroimg/magenta.png";
+    herolist[5] = "img/heroimg/orange.png";
+    herolist[6] = "img/heroimg/purple.png";
+    herolist[7] = "img/heroimg/red.png";
+    herolist[8] = "img/heroimg/white.png";
+    herolist[9] = "img/heroimg/yellow.png";
+    var nummm = Math.floor( Math.random() * 10);
+    console.log(nummm)
+    var img = herolist[nummm];
+    console.log(img)
+    document.getElementById("heroimgurl").src = img;
+
     // document.getElementById('herotext').style.display = "inline";
     // document.getElementById('herotext').style.fontSize="0.5em !important";
     // $("#herotext").css("min-width", "35%");

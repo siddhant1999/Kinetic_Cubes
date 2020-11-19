@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121647578-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-121647578-1');
+</script>
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '606067953110585');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=606067953110585&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Kinetic Cubes</title>
+    <title>Kinetic Cubes | Beautiful Helix Cut Cubes</title>
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -52,7 +79,7 @@
           <div class="leftone col-sm-8 paddingzero">
             <div id="stl_cont"></div>
           </div>
-          <div class="col-sm-8 paddingzero">
+          <div class="col-sm-8 paddingzero spacer" >
           </div>
           <div class="col-sm-4 paddingzero">
             <div id="custom">
@@ -201,7 +228,7 @@
           // console.log("Here is a coupon for ya:")
           var focused = 1
           var curCol= ["", "" ,"", ""]
-           document.getElementById("stl_cont").style.height = screen.height +"px"
+           // document.getElementById("stl_cont").style.height = "100vh"//screen.height +"px"
            // document.getElementById("stl_cont").style.height = window.innerHeight +"px"
 
             var stl_viewer=new StlViewer
@@ -392,13 +419,16 @@
 
 <style type="text/css">
 .leftone {
-  position: fixed;
+  position: relative;
 overflow: hidden;
 z-index: 1000;
 /*margin-left: 25px;*/
 }
 html {
   /*overflow: hidden;*/
+}
+.spacer {
+  height: 0vh;
 }
 .cls-1 {
   fill: #ff3c30;
@@ -421,7 +451,7 @@ html {
 }
 #stl_cont {
 
-  height: 100%;
+  height: 50vh;
   /*display: none;*/
 }
 ::selection{
@@ -445,7 +475,7 @@ html body{
 
 }
 .leftone {
-  display: none;
+  display: inherit;
 }
 .nav.navbar-nav.navbar-right li a {
     color: blue;
@@ -456,11 +486,18 @@ html body{
 #logoim {
       height: 30px;
     }
-@media (min-width: 678px) {
-    /*br {
-        display: none;
-    }*/
+@media (min-width: 576px) {
+    
+    .spacer {
+      height: 100vh;
+    }
+    #stl_cont {
+
+      height: 100vh;
+  /*display: none;*/
+    }
     .leftone {
+      position: fixed;
       display: inherit;
     }
     #logoim {
